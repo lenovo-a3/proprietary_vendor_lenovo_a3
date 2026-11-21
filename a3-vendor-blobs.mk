@@ -27,13 +27,11 @@ PRODUCT_COPY_FILES += \
  vendor/lenovo/a3/proprietary/vendor/lib/libsrv_init.so:system/vendor/lib/libsrv_init.so \
  vendor/lenovo/a3/proprietary/vendor/lib/libsrv_um.so:system/vendor/lib/libsrv_um.so \
  vendor/lenovo/a3/proprietary/vendor/lib/libpvr2d.so:system/vendor/lib/libpvr2d.so \
- vendor/lenovo/a3/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
  vendor/lenovo/a3/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
  vendor/lenovo/a3/proprietary/vendor/lib/libglslcompiler.so:system/vendor/lib/libglslcompiler.so \
  vendor/lenovo/a3/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
  vendor/lenovo/a3/proprietary/vendor/lib/libIMGegl.so:system/vendor/lib/libIMGegl.so \
  vendor/lenovo/a3/proprietary/vendor/lib/libusc.so:system/vendor/lib/libusc.so \
- vendor/lenovo/a3/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
  vendor/lenovo/a3/proprietary/vendor/lib/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
  vendor/lenovo/a3/proprietary/vendor/lib/egl/libGLESv1_CM_mtk.so:system/vendor/lib/egl/libGLESv1_CM_mtk.so \
  vendor/lenovo/a3/proprietary/vendor/lib/egl/libEGL_mtk.so:system/vendor/lib/egl/libEGL_mtk.so \
@@ -93,9 +91,7 @@ PRODUCT_COPY_FILES += \
  vendor/lenovo/a3/proprietary/bin/permission_check:system/bin/permission_check \
  vendor/lenovo/a3/proprietary/bin/muxreport:system/bin/muxreport \
  vendor/lenovo/a3/proprietary/bin/rild:system/bin/rild \
- vendor/lenovo/a3/proprietary/bin/rildmd2:system/bin/rildmd2 \
  vendor/lenovo/a3/proprietary/bin/pppd_dt:system/bin/pppd_dt \
- vendor/lenovo/a3/proprietary/bin/pppd:system/bin/pppd \
  vendor/lenovo/a3/proprietary/bin/nvram_daemon:system/bin/nvram_daemon \
  vendor/lenovo/a3/proprietary/bin/nvram_agent_binder:system/bin/nvram_agent_binder \
  vendor/lenovo/a3/proprietary/lib/libnvram.so:system/lib/libnvram.so \
