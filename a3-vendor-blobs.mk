@@ -39,7 +39,6 @@ PRODUCT_COPY_FILES += \
  vendor/lenovo/a3/proprietary/vendor/lib/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so \
  vendor/lenovo/a3/proprietary/vendor/lib/libBLPP.so:system/vendor/lib/libBLPP.so \
  vendor/lenovo/a3/proprietary/vendor/lib/hw/gralloc.mt8389.so:system/vendor/lib/hw/gralloc.mt8389.so \
- vendor/lenovo/a3/proprietary/lib/hw/hwcomposer.mt8389.so:system/lib/hw/hwcomposer.mt8389.so \
  vendor/lenovo/a3/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
  vendor/lenovo/a3/proprietary/lib/hw/lights.default.so:system/lib/hw/lights.default.so \
  vendor/lenovo/a3/proprietary/lib/hw/power.default.so:system/lib/hw/power.default.so \
@@ -147,3 +146,13 @@ PRODUCT_COPY_FILES += \
  vendor/lenovo/a3/proprietary/etc/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg
 PRODUCT_COPY_FILES += \
   vendor/lenovo/a3/proprietary/lib/hw/audio.primary.mt6589.so:system/lib/hw/audio.primary.mt6589.so
+
+# hwcomposer.mt8389.so is left out for bring-up, so SurfaceFlinger falls back to
+# GLES composition (it loads any HWC module it finds). The KK blob needs the MTK
+# hwc_layer_1 layout (libhardware 0c577f51) and the SurfaceFlinger part of
+# native f7d44b39, neither ported yet. A3_USE_MTK_HWC := true installs it again.
+# (setup-makefiles.sh doesn't know about this; keep it when regenerating.)
+ifeq ($(A3_USE_MTK_HWC),true)
+PRODUCT_COPY_FILES += \
+ vendor/lenovo/a3/proprietary/lib/hw/hwcomposer.mt8389.so:system/lib/hw/hwcomposer.mt8389.so
+endif
