@@ -81,6 +81,16 @@ PRODUCT_COPY_FILES += \
  vendor/lenovo/a3/proprietary/lib/libbessound_mtk.so:system/lib/libbessound_mtk.so \
  vendor/lenovo/a3/proprietary/lib/libbluetoothdrv.so:system/lib/libbluetoothdrv.so \
  vendor/lenovo/a3/proprietary/lib/libbluetooth_mtk.so:system/lib/libbluetooth_mtk.so \
+ vendor/lenovo/a3/proprietary/lib/libMtkOmxCore.so:system/lib/libMtkOmxCore.so \
+ vendor/lenovo/a3/proprietary/lib/libMtkOmxVdec.so:system/lib/libMtkOmxVdec.so \
+ vendor/lenovo/a3/proprietary/lib/libMtkOmxVenc.so:system/lib/libMtkOmxVenc.so \
+ vendor/lenovo/a3/proprietary/lib/libmp4enc_xa.ca7.so:system/lib/libmp4enc_xa.ca7.so \
+ vendor/lenovo/a3/proprietary/lib/libsched.so:system/lib/libsched.so \
+ vendor/lenovo/a3/proprietary/lib/libstagefright_memutil.so:system/lib/libstagefright_memutil.so \
+ vendor/lenovo/a3/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+ vendor/lenovo/a3/proprietary/lib/libvcodec_oal.so:system/lib/libvcodec_oal.so \
+ vendor/lenovo/a3/proprietary/lib/libvcodec_utility.so:system/lib/libvcodec_utility.so \
+ vendor/lenovo/a3/proprietary/lib/libvcodecdrv.so:system/lib/libvcodecdrv.so \
  vendor/lenovo/a3/proprietary/bin/hald:system/bin/hald \
  vendor/lenovo/a3/proprietary/bin/wlan_loader:system/bin/wlan_loader \
  vendor/lenovo/a3/proprietary/bin/6620_launcher:system/bin/6620_launcher \
